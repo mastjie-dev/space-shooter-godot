@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/laserSmall_002.ogg" type="AudioStream" id=1]
+[ext_resource path="res://AudioManager.gd" type="Script" id=2]
+[ext_resource path="res://assets/impactMetal_003.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/explosionCrunch_001.ogg" type="AudioStream" id=4]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource( 2 )
+
+[node name="BulletFire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -5.0
+
+[node name="SmallExplosion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 2.0
+
+[node name="SmallExplosion2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="SmallExplosion3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="BigExplosion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="BigExplosion2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="BigExplosion3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
